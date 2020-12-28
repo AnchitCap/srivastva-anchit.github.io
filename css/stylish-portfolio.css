@@ -21,6 +21,7 @@ body {
 .content-section {
   padding-top: 7.5rem;
   padding-bottom: 7.5rem;
+  background-image: url("../img/portfolio-2.jpg");
 }
 
 .content-section-heading h2 {
