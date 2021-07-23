@@ -5,7 +5,13 @@
 
   <script>
     dataLayer = [{
-      'Client ID': model.clientId
+      'Client ID': function() {
+      // Modify customDimensionIndex to match the index number you want to send the data to
+      var customDimensionIndex = 1;
+      return function(model) {
+      model.set('dimension' + customDimensionIndex, model.get('clientId'));
+  }
+}
     }];
   </script>
 
